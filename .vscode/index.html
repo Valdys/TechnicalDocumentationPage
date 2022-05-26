@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Contents  </header>
+      <ul>
+        <li><a class="nav-link" href="#Classes_of_technical_documentation">Classes of technical documentation</a></li>
+        <li>
+          <a class="nav-link" href="#Standardizing_technical_documentation"
+            >Standardizing technical documentation</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Discipline-specific"
+            >Discipline-specific</a
+          >
+        </li>
+        <li><a class="nav-link" href="#EU_Medical_Device_Regulation">EU Medical Device Regulation</a></li>
+        <li><a class="nav-link" href="#Formats_for_source_data">Formats for source data</a></li>
+        <li>
+          <a class="nav-link" href="#Documentation_architecture_and_typing"
+            >Documentation architecture and typing</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Example_Of_Technical_Documentation"
+            >Example Of Technical Documentation</a
+          >
+        </li>
+          <a class="nav-link" href="#Reference"
+            >Reference</a
+          >
+        </li>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Classes_of_technical_documentation">
+        <header>Classes of technical documentation</header>
+        <article>
+        
+            Classes of technical documentation may include:
+            <ul>
+                <li>patents</li>
+                <li>specifications of item or of components/materials</li>
+                <li>data sheets of item or of components/materials</li>
+                <li>test methods</li>
+                <li>manufacturing standards</li>
+                <li>system requirements</li>
+                <li>system architecture</li>
+                <li>system design documents and data including those necessary for the system development, testing, manufacturing, operation and maintenance</li>
+            </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Standardizing_technical_documentation">
+        <header>Standardizing technical documentation</header>
+        <article>
+          <p>   
+                Historically, most classes of technical documentation lacked
+                universal conformity (standards) for format, content and structure.</p>
+                <p>Standards are being developed to redress this through
+                bodies such as the International Organization for Standardization(ISO),
+                which has published standards relating to rules
+                for preparation of user guides, manuals, product specifications, etc for technical
+                product documentation.</p>
+                <p>These standards are covered by ICS 01.110.[1] Technical product documentation not covered by ICS 01.110 are listed in
+                the subsection below.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Discipline-specific">
+        <header>Discipline-specific</header>
+          <article>
+            <ul>
+                <li>ISO 15787</li>
+                <li>ISO 3098</li>
+                <li>ISO 10209</li>
+                <li>ISO 2162</li>
+                <li>ISO 5457</li>
+                <li>ISO 6433</li>
+                  
+                </li>
+              </ul>
+        </article>
+      </section>
+      <section class="main-section" id="EU_Medical_Device_Regulation">
+        <header>EU Medical Device Regulation</header>
+        <p>A technical documentation is also required for medical devices
+            following EU medical device regulation.</p>
+            <p>Annex II, Technical documentation,
+            and Annex III, Technical documentation on post-market surveillance, of the regulation describe the content of a
+            technical documentation for a medical device.</p>
+        <p>This includes e.g. information on the device specification, labelling
+            and instructions, design and manufacture, safety and performance requirements, risk management, and the validatain
+            and verfification of the device, inluding the clinical evaluation;
+            and also information from postmarketing surveillance.</p>
+      </section>
+      <section class="main-section" id="Formats_for_source_data">
+        <header>Formats for source data</header>
+        <ul>
+            <li>Darwin Information Typing Architecture (DITA)</li>
+            <li>DocBook</li>
+            <li>S1000D</li>
+            <li>reStructuredText</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Documentation_architecture_and_typing">
+        <header>Documentation architecture and typing</header>
+        <article>
+          <p>
+            Some documentation systems are concerned with the overall types or forms of documentation that constitute a
+            documentation set, as well as (or rather than) how the documentation is produced, published or formatted.
+          </p>
+          <p>
+            For example, the Diátaxis framework (which is mostly used in the field of software documentation) posits four
+            distinct documentation forms, corresponding to four different user needs: tutorials, how-to guides, reference and
+            explanation.</p>
+        <p>By contrast, DITA asserts five different "topic types": Task, Concept, Reference, Glossary Entry, and
+            Troubleshooting, while RedHat's Modular Documentation system uses three "modules": Concept, Procedure and Reference</p>
+        
+        </article>
+      </section>
+      
+      <section class="main-section" id="Example_Of_Technical_Documentation">
+          <header>Example Of Technical documentation </header>
+         
+            <p>if...else statement</p>
+            <article>
+              Use the if statement to execute a statement if a logical condition is
+              true. Use the optional else clause to execute a statement if the
+              condition is false. An if statement looks as follows:
+    
+              <code>if (condition) { statement_1; } else { statement_2; }</code>
+              condition can be any expression that evaluates to true or false. See
+              Boolean for an explanation of what evaluates to true and false. If
+              condition evaluates to true, statement_1 is executed; otherwise,
+              statement_2 is executed. statement_1 and statement_2 can be any
+              statement, including further nested if statements.
+              <p>
+                You may also compound the statements using else if to have multiple
+                conditions tested in sequence, as follows:
+              </p>
+              <code
+                >if (condition_1) { statement_1; } else if (condition_2) {
+                statement_2; } else if (condition_n) { statement_n; } else {
+                statement_last; }
+              </code>
+              In the case of multiple conditions only the first logical condition
+              which evaluates to true will be executed. To execute multiple
+              statements, group them within a block statement ({ ... }) . In
+              general, it's good practice to always use block statements, especially
+              when nesting if statements:
+    
+              <code
+                >if (condition) { statement_1_runs_if_condition_is_true;
+                statement_2_runs_if_condition_is_true; } else {
+                statement_3_runs_if_condition_is_false;
+                statement_4_runs_if_condition_is_false; }</code
+              >
+              It is advisable to not use simple assignments in a conditional
+              expression, because the assignment can be confused with equality when
+              glancing over the code. For example, do not use the following code:
+              <code>if (x = y) { /* statements here */ }</code> If you need to use
+              an assignment in a conditional expression, a common practice is to put
+              additional parentheses around the assignment. For example:
+    
+              <code>if ((x = y)) { /* statements here */ }</code>
+            </article>
+          
+      <p>While Statement</p>
+            
+            <article>
+              A while statement executes its statements as long as a specified
+              condition evaluates to true. A while statement looks as follows:
+    
+              <code>while (condition) statement</code> If the condition becomes
+              false, statement within the loop stops executing and control passes to
+              the statement following the loop.
+    
+              <p>
+                The condition test occurs before statement in the loop is executed.
+                If the condition returns true, statement is executed and the
+                condition is tested again. If the condition returns false, execution
+                stops and control is passed to the statement following while.
+              </p>
+    
+              <p>
+                To execute multiple statements, use a block statement ({ ... }) to
+                group those statements.
+              </p>
+    
+              Example:
+    
+              <p>
+                The following while loop iterates as long as n is less than three:
+              </p>
+    
+              <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
+              <p>
+                With each iteration, the loop increments n and adds that value to x.
+                Therefore, x and n take on the following values:
+              </p>
+    
+              <ul>
+                <li>After the first pass: n = 1 and x = 1</li>
+                <li>After the second pass: n = 2 and x = 3</li>
+                <li>After the third pass: n = 3 and x = 6</li>
+              </ul>
+              <p>
+                After completing the third pass, the condition n &lt; 3 is no longer
+                true, so the loop terminates.
+              </p>
+            </article>
+          </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://en.wikipedia.org/wiki/Technical_documentation"
+                target="_blank"
+                >Wikipedia</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
